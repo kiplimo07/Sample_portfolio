@@ -1,0 +1,39 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center my-5 fade-in">
+    <h1 class="display-4">Welcome to My Professional Portfolio</h1>
+    <p class="lead">Customer-Focused Hospitality Professional with a Passion for Excellence</p>
+    <a href="{% url 'services' %}" class="btn btn-primary btn-lg">View My Services</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'images/Front-office.jpg' %}" class="card-img-top" alt="Front Office Operations">
+            <div class="card-body">
+                <h5 class="card-title">Front Office Operations</h5>
+                <p class="card-text">Ensuring a seamless guest experience from check-in to check-out.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'images/Food-beverage.jpg' %}" class="card-img-top" alt="Food & Beverage Service">
+            <div class="card-body">
+                <h5 class="card-title">Food & Beverage Service</h5>
+                <p class="card-text">Delivering exceptional dining experiences with a smile.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'images/Customer-relationship.jpg' %}" class="card-img-top" alt="Customer Relationship Management">
+            <div class="card-body">
+                <h5 class="card-title">Customer Relationship Management</h5>
+                <p class="card-text">Building lasting relationships to drive loyalty and repeat business.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

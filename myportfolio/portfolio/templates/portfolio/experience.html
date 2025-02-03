@@ -1,0 +1,20 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container my-5 fade-in">
+    <h1>Experience & Achievements</h1>
+    <div class="row">
+        {% for item in portfolio_items %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/experience.jpg' %}" class="card-img-top" alt="Experience">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <p class="card-text">{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

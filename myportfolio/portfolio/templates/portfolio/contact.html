@@ -1,0 +1,14 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<div class="container my-5 fade-in">
+    <h1>Contact Me</h1>
+    {% if success %}
+    <div class="alert alert-success">Your message has been sent successfully!</div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+{% endblock %}

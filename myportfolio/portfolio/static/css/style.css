@@ -1,0 +1,131 @@
+/* Custom styles for the portfolio website */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F9FA;
+    color: #333333;
+}
+
+/* Navbar styling */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #6C63FF !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6584 !important;
+}
+
+/* Container styling */
+.container {
+    padding-top: 40px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #6C63FF;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #FF6584;
+    border-color: #FF6584;
+}
+
+/* Cards */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6C63FF;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Footer */
+.footer {
+    background-color: #6C63FF;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #FF6584;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #00BFA6;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
